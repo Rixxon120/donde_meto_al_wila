@@ -41,7 +41,7 @@ let obtener_datos = () => {
         let respuesta = input_respuesta.value;
         
 
-        registrar_faq_mep(pregunta, respuesta);
+        registrar_mep(pregunta, respuesta);
        
     
     } else {

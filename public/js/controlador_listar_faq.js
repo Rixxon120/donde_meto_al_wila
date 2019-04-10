@@ -18,3 +18,4 @@ fila.insertCell().innerHTML=faq[i]['respuesta'];
 };
 
 mostrar_datos();
+

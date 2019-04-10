@@ -1,21 +1,21 @@
 'use strict';
 const express = require('express');
 const router =  express.Router();
-const registros_mep_api = require('./registros_mep.api');
+const registros_api = require('./registros.api');
 
 const fs= require("fs");
 
-router.route('/registrar_faq_mep')
+router.route('/registrar_faq')
     .post(
         function(req, res){
-            registros_mep_api.registrar_mep(req, res);
+            registros_api.registrar(req, res);
         }
     );
 
-router.route('/consultar_faq_mep')
+router.route('/consultar_faq')
         .get(
             function(req, res){
-                registros_mep_api.listar_faq_mep(req, res);
+                registros_api.listar_faq(req, res);
             }
         )
 

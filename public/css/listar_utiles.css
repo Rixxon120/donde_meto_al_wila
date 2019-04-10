@@ -1,0 +1,49 @@
+h1{
+    
+    margin:0 auto;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+table{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    border: 2px solid #0000;
+    width: 75%;
+    height: 40%;
+    
+}
+table {
+    height:500px;
+    overflow: scroll;
+    display: block;
+}
+
+table thead{
+    background: rgba(0,0,0,.7);
+    color:#fff;
+      
+}
+table th, table td{
+    padding:15px 10px;
+    text-align: center;
+    width: 500px;
+
+}
+tbody tr:hover{
+    background: #FFFFFF;
+    color: #969393;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000
+}
+
+header nav div img{
+
+    position:relative;
+    right:387px;
+    width: 150px;
+    height:100px;
+    padding-bottom: 0%
+    
+    }

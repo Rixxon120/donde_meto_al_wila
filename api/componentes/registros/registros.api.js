@@ -5,9 +5,17 @@ module.exports.registrar = (req, res) =>{
     let registros_nuevo = new model_registros(
         {
             
-            pregunta : req.body.pregunta,
-            respuesta : req.body.respuesta,
-
+            nombre : req.body.nombre,
+            identificacion : req.body.identificacion,
+            nacionalidad : req.body.nacionalidad,
+            provincias : req.body.provincias,
+            cantones : req.body.cantones,
+            distritos : req.body.distritos,
+            hijos : req.body.hijos,
+            correo : req.body.correo,
+            password: req.body.password,
+            tipo1: req.body.tipo1,
+            foto : req.body.foto
 
             
         }
@@ -26,7 +34,7 @@ module.exports.registrar = (req, res) =>{
                 res.json(
                     {
                         success : true,
-                        msg : `Registro exitoso`
+                        msg : `Se registró sus datos de forma correcta`
                     }
                 )
             }
@@ -37,7 +45,7 @@ module.exports.registrar = (req, res) =>{
 
 
 
-module.exports.listar_faq = (req ,res) =>{
+module.exports.listar_todos = (req ,res) =>{
 
 model_registros.find().then(
         function(registros){
@@ -60,3 +68,35 @@ model_registros.find().then(
 
     )
 };
+
+
+module.exports.validar = function(req ,res) {
+    model_registros .findOne({identificacion : req.body.identificacion}).then(
+        function(usuario){
+            if(usuario){
+              if(usuario.password == req.body.password){
+                  res.json({
+   success:true,
+   usuario :usuario
+
+
+                  });
+                   }else{
+
+                    res.json({
+                  success:false
+            
+
+                    });
+                  
+
+              }
+            }else{
+                res.json({
+success:false,
+msg: 'el usuario no existe'
+                });
+                }
+            }
+    )
+   };

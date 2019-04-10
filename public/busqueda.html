@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CE - Busqueda</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/listar_utiles.css">
+    <link rel="stylesheet" href="css/busqueda.css">
+</head>
+<link rel="icon" type= "image/png" href="imgs/logo.ico">
+
+<body>
+    <header class="header_principal">
+        <nav>
+            <div id=menu_principal>
+                <img src="imgs/logo.png" id="logo_app2" alt="logotipo_1">
+                <a href="index_pf.html">INICIO</a>
+                <a href="index.html">CERRAR SESIÓN</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="busqueda_instruccion">
+            <h1>
+                Buscar Centro Educativo
+            </h1>
+            <p>Puedes buscar el centro Educativo por nombre, tipo de centro o ubicación, introduzca su busqueda y digite enter</p>
+
+            <form>
+
+                <div>
+                    <input list="nombre_centro" id="txt_nombre_centro">
+                    <datalist id="nombre_centro">
+                        <option value="">
+                    </datalist>
+                </div>
+            </form>
+        </div>
+        <table id="tbl_centro">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Provincia</th>
+                    <th>Cantón</th>
+                    <th>Distrito</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="contenedor-form">
+            <h2>Agendar cita</h2>
+
+            <div>
+                <label for="txt_nombre_centro">Nombre de Centro Educativo</label>
+                <input type="text" id="txt_nombre_centro">
+            </div>
+
+
+            <div>
+                <label for="txt_nombre_cita">Nombre completo</label>
+                <input type="text" id="txt_nombre_cita">
+            </div>
+
+            <div>
+                <label for="txt_correo_cita">Correo para Información</label>
+                <input type="email" id="txt_correo_cita" placeholder="ejemplo@ejemplo.com">
+            </div>
+            <div>
+                <p>Seleccione una fecha: <input type="text" id="datepicker"></p>
+            </div>
+            <div>
+                <button type="button" id="btn_agendar_cita">Agendar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="menu_secundario">
+    
+            <div id="columna_1">
+                <h2>POWERED BY:</h2>
+                <a title="Indominus Group" href="index_indominus.html"><img src="imgs/logo indominous.png" alt="Indominus" /></a>
+            </div>
+    
+            <div id="columna_2">
+                <h2>
+                    SITIOS DE INTERÉS
+                </h2>
+                <div>
+                    <a href="https://www.mep.go.cr/">Ministerio de Educación Pública</a>
+                </div>
+                <div>
+                    <a href="http://www.mcj.go.cr/">Ministerio de Cultura y Juventud</a>
+                </div>
+            </div>
+    
+    
+            <div id="columna_3">
+                <h2>
+                    INFORMACIÓN
+                </h2>
+                <div>
+                        <a href="index_ads.html">Acerca del Sitio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="js/provincias.js"></script>
+    <script src="js/cantones.js"></script>
+    <script src="js/distritos.js"></script>
+    <script src="js/controlador_ubicacion_ce.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_registros_ce.js"></script>
+    <script src="js/controlador_busqueda.js"></script>
+</body>
+
+</html>

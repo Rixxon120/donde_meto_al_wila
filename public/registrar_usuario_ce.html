@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css" ><title> Registrar Centro Educativo</title>
+</head>
+<link rel="icon" type= "image/png" href="imgs/logo.ico">
+
+<body>
+
+        <header class="header_principal">
+                <nav>
+                        <div id=menu_principal>
+                                <img src="imgs/logo.png" id="logo_app2" alt="logotipo_1">
+                            <a href="index.html">INICIO</a>
+                            <a href="Inicio-sesion.html">INICIAR SESIÓN</a>
+                    </div>
+                </nav>
+            </header>
+    <main>
+
+        <div class="contenedor-form">
+
+        <div id="formulario">
+            <form>
+                <h2>
+                    Registrar Centro Educativo
+                </h2>
+                <div>
+                    <label for="txt_ced">Cedula Jurídica</label>
+                    <input type="text" id="txt_ced">
+                </div>
+
+                <div>
+                    <label for="password1">Contraseña</label>
+                    <input type="password" id="txt_password1">
+                </div>
+
+                <div>
+                    <label for="txt_nivel">Nivel</label>             
+                    <select id="txt_nivel">
+                    <option value="">--Seleccione los niveles--</option>
+                    <option value="Preescolar">Preescolar</option>
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                    <option value="Preescolar y Primaria">Preescolar y Primaria</option>
+                    <option value="Primaria y Secundaria">Primaria y Secundaria</option>
+                    <option value="Preescolar-Primaria-Secundaria">Preescolar-Primaria-Secundaria</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="txt_tipo">Tipo</label>
+                    <select id="txt_tipo">
+                            <option value="">--Seleccione el Tipo de Centro Educativo--</option>    
+                    <option value="Público">Público</option>
+                    
+                    <option value="Privado">Privado</option>
+                    <option value="Vocacional">Vocacional</option>
+                    <option value="Técnico">Técnico</option>
+                    <option value="Educación Abierta">Educación Abierta</option>
+                    <option value="Religioso">Religioso</option>
+                    <option value="Internado">Internado</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="txt_nombre">Nombre Completo de la Institución</label>
+                    <input type="text" id="txt_nombre">
+                </div>
+
+                <div>
+
+                    <label for="slt_provincias">Provincia</label>
+                    <select id="slt_provincias">
+                        <option value="">--Selecciones una provincia--</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="slt_cantones">Cantón</label>
+                    <select id="slt_cantones">
+                        <option value="">--Seleccione un cantón--</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="slt_distritos">Distrito</label>
+                    <select id="slt_distritos">
+                        <option value="">--Seleccione un distrito--</option>
+
+
+
+                    </select>
+                </div>
+
+                <div>
+                    <label for="num_año_fun">Año de Fundación</label>
+                    <input type="number" id="num_año_fun">
+                </div>
+
+                <div>
+                    <label for="txt_ref">Referencia Historica</label>
+                    <input type="text" id="txt_ref">
+                </div>
+
+               
+        <div>
+                <label for="img_salud">Documento del Ministerio de Salud</label>
+                <input type="file" name="salud" id="img_salud" />
+        </div>
+
+        <div>
+            <label for="img_muni">Documento de la Municipalidad</label>
+            <input type="file" name="muni" id="img_muni" />
+        </div>
+
+        <div>
+            <label for="img_otro">Otros Documentos</label>
+            <input type="file" name="otro" id="img_otro" />
+        </div>
+        <div>
+            <button type="button" id="btn_registrar">Registrar</button>
+        </div>
+            </form>
+
+        </div>
+
+    </main>
+
+
+<footer>
+    <div id="menu_secundario">
+
+        <div id="columna_1">
+            <h2>POWERED BY:</h2>
+            <a title="Indominus Group" href="index_indominus.html"><img src="imgs/logo indominous.png" alt="Indominus" /></a>
+        </div>
+
+        <div id="columna_2">
+            <h2>
+                SITIOS DE INTERÉS
+            </h2>
+            <div>
+                <a href="https://www.mep.go.cr/">Ministerio de Educación Pública</a>
+            </div>
+            <div>
+                <a href="http://www.mcj.go.cr/">Ministerio de Cultura y Juventud</a>
+            </div>
+        </div>
+
+
+        <div id="columna_3">
+            <h2>
+                INFORMACIÓN
+            </h2>
+            <div>
+                    <a href="index_ads.html">Acerca del Sitio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</main>
+
+    <script src="js/provincias.js"></script>
+    <script src="js/cantones.js"></script>
+    <script src="js/distritos.js"></script>
+    <script src="js/controlador_ubicacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_registros_ce.js"></script>
+    <script src="js/controlador_registrar_registros_cedu.js"></script>
+    
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 'use strict';
-const model_registros_mep = require('./registros_mep.model');
+const model_registros = require('./registros.model');
 
-module.exports.registrar_mep = (req, res) =>{
-    let registros_nuevo_mep = new model_registros_mep(
+module.exports.registrar = (req, res) =>{
+    let registros_nuevo = new model_registros(
         {
             
             pregunta : req.body.pregunta,
@@ -13,7 +13,7 @@ module.exports.registrar_mep = (req, res) =>{
         }
     );
     
-    registros_nuevo_mep.save(
+    registros_nuevo.save(
         function(error){
             if(error){
                 res.json(
@@ -37,22 +37,22 @@ module.exports.registrar_mep = (req, res) =>{
 
 
 
-module.exports.listar_faq_mep = (req ,res) =>{
+module.exports.listar_mep = (req ,res) =>{
 
-model_registros_mep.find().then(
-        function(registros_mep){
-            if(registros_mep.length > 0){
+model_registros.find().then(
+        function(registros){
+            if(registros.length > 0){
                 res.json(
                     {
                         success: true,
-                        registros_mep: registros_mep
+                        registros: registros
                     }
                 )
             }else{
                 res.json(
                     {
                         success: false,
-                        registros_mep: 'No se encontraron usuarios registrados'
+                        registros: 'No se encontraron usuarios registrados'
                     }
                 )
             }

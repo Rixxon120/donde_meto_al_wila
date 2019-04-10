@@ -1,0 +1,184 @@
+body{
+    background: #000000;
+}
+p{
+    font-size: 20px;
+}
+p , h1 , h2 , h3 , li{
+    color: #fffffF;
+}
+#logotipo img{
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+    width: 500px;
+    height: 500px;
+    display: block;
+    border: 2px solid #000000;
+    border-radius: 100%;
+}
+#logotipo{
+    background-image: radial-gradient(#000000 63%, #fd3636 );
+    padding-bottom: 40px;
+   
+   
+}
+#titulo h1 , #titulo p{
+text-align: center;
+}
+#titulo h1 {
+    font-size: 32px;
+    font-family: 'Sniglet', cursive;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+#titulo p{
+    width:600px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+}
+#titulo{
+    
+    background-image:linear-gradient( #fd3636 , #000000 56%  );
+}
+#mision_vision{
+    display:flow-root;
+    width: 900px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background:#000000;
+}
+
+
+.m_v{
+    width:400px;
+    height: 300px;
+    float: left;
+    background-image: radial-gradient(circle, #fd3636 , #000000 55% );
+}
+#m_v_izq , .col_izq{
+    float:left;
+    display: block;
+}
+#m_v_der ,.col_der {
+    float:right;
+    display: block;
+}
+.m_v h2 , #valores h2 , #integrantes h2 , #integrantes h2 , #reglamento h2{
+    font-size: 32px;
+    text-align:center;
+    margin-bottom: 30px;
+    font-family: 'Sniglet', cursive;
+}
+.m_v{
+    text-align: center
+}
+#valores{
+    width: 500px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+#valores div{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.val{
+    display: block;
+    margin-left:auto;
+    margin-right:auto; 
+    margin-bottom: 15px;
+    
+    
+}
+.val p{
+    text-align:center;
+    font-size:22px;
+}
+.val img{
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto; 
+    margin-bottom: 15px;
+}
+h3{
+    font-size: 26px;
+    font-family: 'Sniglet', cursive;
+    margin-bottom: 5px;
+}
+#integrantes img{
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+    width: 200px;
+    height: 200px;
+    display: block;
+    border: 2px solid #000000;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    background: #fffffF;
+}
+#integrantes p{
+    margin-bottom:30px;
+}
+.int{
+    width: 290px;
+    height: 990px;
+    background-image: linear-gradient(to bottom right, #fd3636 , #000000 29%);
+    padding: 25px;
+}
+.int li{
+    font-size: 20px;
+}
+.int ul{
+    margin-bottom: 15px;
+}
+#integrantes{
+   font-display: flow root;
+   width: 55%;
+   display: block;
+   margin-left: auto;
+   margin-right:auto;
+  
+}
+#reglamento{
+    width:800px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    background-image: linear-gradient(#fd3636 );
+}
+#reglamento p{
+    text-align: justify;
+    font-size:18px;
+   
+}
+#reglamento h3{
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+a{
+    text-decoration:none;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    padding: 15px;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size: 30px;
+    color: #000000;
+    
+}
+a:hover {
+    color:#ffffff;
+    border: 2px solid #FFFFFF;
+    width: 300px;
+}

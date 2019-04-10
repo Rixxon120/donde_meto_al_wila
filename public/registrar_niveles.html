@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CE - Registro Niveles</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/listar_utiles.css">
+</head>
+<link rel="icon" type= "image/png" href="imgs/logo.ico">
+<body>
+    <header class="header_principal">
+        <nav>
+            <div id=menu_principal>
+                <img src="imgs/logo.png" id="logo_app" alt="logotipo_1">
+                <a href="index.html">INICIO</a>
+                <a href="">CENTRO EDUCATIVO</a>
+                <a href="">FAMILIA</a>
+                <a href="">BUSCAR</a>
+                <a href="">CONTACTENOS</a>
+                <button type="button" id="login_in">Iniciar Sesión</button>
+                <button type="button" id="login_out">Cerrar Sesión</button>
+            </div>
+        </nav>
+    </header>
+ 
+    <main>
+        
+
+            <main>
+                    <div class="contenedor-form">
+                        
+                        <div class="formulario">
+                                <form>
+                            <h2>Registro de niveles academicos de la Institución</h2>
+                            <div>
+                    <label for="txt_nombre_edu">Nombre</label>
+                    <input type="text" name="text" class="form-control" id="txt_nombre_edu">
+                  </div>
+            
+            <div class="niveles">
+                    <label for="opt_pre">Preescolar</label>
+                    <select  id="opt_pre">
+                        <option value="">--Seleccione SI o NO --</option>
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option>
+                        
+                    </select>
+                </div>
+       
+            <div class="niveles">
+            
+                    <label for="opt_edu_pri">Educacion Primaria</label>
+                    <select  id="opt_edu_pri">
+                        <option value="">--Seleccione SI o NO  --</option>
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option>
+                        
+                    </select>
+
+        </div>
+
+        <div class="niveles">
+            
+                <label for="opt_edu_secu">Educación Secundaria</label>
+                <select  id="opt_edu_secu">
+                    <option value="">--Seleccione SI o NO --</option>
+                    <option value="SI">SI</option>
+                    <option value="NO">NO</option>
+                    
+                </select>
+
+    </div>
+
+
+    <div class="niveles">
+            
+            <label for="opt_edu_div">Educación Diversificada</label>
+            <select  id="opt_edu_div">
+                <option value="">--Seleccione SI o NO --</option>
+                <option value="SI">SI</option>
+                <option value="NO">NO</option>
+                
+            </select>
+
+</div>
+
+
+
+
+
+            <div id="boton-login">
+
+                    <div>
+                            <button type="button" id="btn_enviar">Registrar</button>
+                        </div>
+
+          </div>
+          </form>
+       
+        
+          <div class="link_sesion">
+         
+            <p> go <a href="./index.html">home</a>.</p>
+          </div>
+
+        </div>
+
+
+
+    </main>
+</main>
+<footer>
+    <div id="menu_secundario">
+
+        <div id="columna_1">
+            <h2>POWERED BY:</h2>
+            <img src="imgs/logo indominous.png">
+        </div>
+
+        <div id="columna_2">
+            <h2>
+                SITIOS DE INTERÉS
+            </h2>
+            <div>
+                <a href="https://www.mep.go.cr/">Ministerio de Educación Pública</a>
+            </div>
+            <div>
+                <a href="http://www.mcj.go.cr/">Ministerio de Cultura y Juventud</a>
+            </div>
+        </div>
+
+
+        <div id="columna_3">
+            <h2>
+                INFORMACIÓN
+            </h2>
+            <div>
+                    <a href="index_ads.html">Acerca del Sitio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_niveles.js"></script>
+    <script src="js/controlador_niveles.js"></script> 
+    </body>
